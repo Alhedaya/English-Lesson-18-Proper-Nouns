@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 18 - Proper Nouns </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 250vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:15px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:210px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: center;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+.p{ font-size: 30px; cursor:pointer;}
+.p1 { font-size: 40px; cursor:pointer;}
+
+.div1 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div2 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div3 {font-size: 30px;}
+.div4  {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div5 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 30px;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.p{ font-size: 25px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div3 {font-size: 25px;}
+.div4 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<h1 class="tooltips">  Proper nouns <span class="tooltipstext"></span> </h1> 
+
+
+
+<div class="div3" style="text-align: center;  padding: 10px; border-radius: 6px;">Names of people, places and organisations are called proper nouns. </div>
+
+<div class="div1" style=" ">
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 10px;"><b>M</b>uhammad <b>A</b>li</div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 10px;"><b>B</b>irmingham</div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 10px;"><b>C</b>hina</div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 10px;"><b>O</b>xford <b>U</b>niversity</div>
+<div style="text-align: center; font-size: 30px; padding-top: 9px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 10px;">the <b>U</b>nited <b>N</b>ations</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="div2" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+
+We spell proper nouns with a capital letter:<br><br>
+
+&bull; <b>S</b>arah Wael<br>
+&bull; <b>L</b>ondon<br>
+&bull; <b>S</b>pain<br>
+&bull; <b>H</b>avard <b>U</b>niversity<br>
+&bull; <b>E</b>uropean <b>E</b>union<br><br>
+
+
+
+We use capital letters for <b>festivals</b>:<br><br>
+
+&bull; <b>R</b>amadan<br>
+&bull; <b>D</b>eepvali<br>
+&bull; <b>E</b>aster<br>
+&bull; <b>C</b>hristmas<br>
+&bull; <b>T</b>hanksgiving<br><br>
+
+
+We use capital letters for people's <b>titles</b>:<br><br>
+
+
+&bull; I was talking to <b>D</b>octor <b>W</b>ilson recently.<br><br>
+
+
+When we give the names of <b>books, films, plays and paintings,</b> we use capital letters for the nouns, adjectives and verbs in the name:<br><br>
+
+&bull; I have been reading <b>T</b>he <b>O</b>ld <b>M</b>an and the <b>S</b>ea.<br>
+&bull; Beatrix Potter wrote <b>T</b>he <b>T</b>ale of <b>P</b>eter <b>R</b>abbit.<br>
+&bull; You can see the <b>M</b>ona <b>L</b>isa in the <b>L</b>ouvre.<br><br>
+
+
+Sometimes we use a person's name to refer to <b>something they have created</b>:<br><br>
+
+&bull; Recently a <b>V</b>an <b>G</b>ogh was sold for 15 million dollars.<br>
+&bull; We were listening to <b>M</b>ozart.<br>
+&bull; I'm reading an <b>A</b>gatha <b>C</b>hristie.<br><br>
+
+
+</div>
+</div>
+
+</div>
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "spectacles.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "pyjamas.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "tights.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "trousers.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "pants.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "jeans.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "shorts.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "boxers.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "knickers.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "pliers.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "scissors.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "binoculars.mp3";
+ 
+  var sound13 = new Audio();
+  sound13.src = "pincers.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "flock.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "herd.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "team.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "anitemof.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "itemsof.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</html>
